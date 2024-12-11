@@ -3,11 +3,11 @@ Features
 
 Classifies emails as Spam or Not Spam.
 
-Uses a Naive Bayes classifier for efficient text classification.
+Uses CountVectorizer for text vectorization.
 
-Handles text preprocessing with CountVectorizer for feature extraction.
+Trained using the Multinomial Naive Bayes algorithm.
 
-Provides a streamlined and accurate email filtering solution.
+Achieves a high level of accuracy for spam detection.
 
 
 Dataset
@@ -19,7 +19,8 @@ It includes:
 Spam messages (e.g., promotions, scams).
 
 Ham messages (non-spam emails like personal or work-related communication).
-download dataset "spam dataset"
+
+dataset file:spam.csv
 
 
 
@@ -29,10 +30,12 @@ Python 3.8+
 
 Libraries:
 
-pandas - For data manipulation and analysis.
+pandas - For data manipulation and preprocessing.
 
-scikit-learn - For model training, testing, and evaluation.
+scikit-learn - For machine learning and vectorization.
 
-CountVectorizer - For converting text into numerical features.
+   CountVectorizer: Converts text into numerical features.
 
-pickle - For saving the trained model and vectorizer.
+   MultinomialNB: Naive Bayes algorithm for classification.
+
+numpy (implicit in sklearn) - For numerical operations.
