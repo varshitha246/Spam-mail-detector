@@ -28,6 +28,8 @@ Tools and Libraries
 
 Python 3.8+
 
+Jupyter Notebook
+
 Libraries:
 
 pandas - For data manipulation and preprocessing.
